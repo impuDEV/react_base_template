@@ -6,10 +6,12 @@ Webpack 5
 
 ## Технологии
 - Typescript 6
-- транспиляция  Babel 7
+- транспиляция Babel 7
+- Suspense-Lazy code splitting
 
 ## Стили
-- SASS
+- SCSS
+- CSS modules
 
 ## Стилистика кода
 - eslint для проверки typescript кода
