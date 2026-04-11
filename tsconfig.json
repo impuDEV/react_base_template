@@ -4,12 +4,12 @@
 		"outDir": "./dist/",
 		"noImplicitAny": true,
 		"module": "ESNext",
+		"esModuleInterop": true,
 		"jsx": "react-jsx",
 		"allowJs": true,
 		"paths": {
 			"@/*": ["./src/*"]
 		},
-		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"sourceMap": true,
 		"resolveJsonModule": true,

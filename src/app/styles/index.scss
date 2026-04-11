@@ -1,6 +1,18 @@
 @forward "reset";
 @forward "variables/global";
+@forward "themes/standard";
 
 .app {
-	background: aqua;
+	font: var(--font-m);
+	color: var(--on-surface-color);
+	margin: 0 auto;
+	background: var(--surface-color);
+	min-height: 100vh;
+}
+
+.content-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
 }
