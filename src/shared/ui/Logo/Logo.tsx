@@ -1,10 +1,10 @@
-import {CSSProperties, memo, useMemo} from 'react'
+import { CSSProperties, memo, useMemo } from 'react'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import cls from './Logo.module.scss'
-import {Loader} from "@/shared/ui/Loader";
-import {Icon} from "@/shared/ui/Icon";
+import { Loader } from '@/shared/ui/Loader'
+import { Icon } from '@/shared/ui/Icon'
 import noimage from '../../assets/icons/nophoto.svg'
-import {AppImage} from "@/shared/ui/AppImage";
+import { AppImage } from '@/shared/ui/AppImage'
 
 interface LogoProps {
 	src?: string

@@ -1,6 +1,6 @@
-import {Theme} from "@/shared/const/theme";
-import {ReactNode, useMemo, useState} from "react";
-import {ThemeContext} from "@/shared/lib/context/ThemeContext";
+import { Theme } from '@/shared/const/theme'
+import { ReactNode, useMemo, useState } from 'react'
+import { ThemeContext } from '@/shared/lib/context/ThemeContext'
 
 const defaultTheme = Theme.STANDARD
 

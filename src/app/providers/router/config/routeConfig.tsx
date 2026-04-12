@@ -1,10 +1,10 @@
-import {RouteProps} from "react-router-dom";
+import { RouteProps } from 'react-router-dom'
 import {
 	AppRoutes,
 	getRouteMain
-} from "@/shared/const/router";
-import {NotFoundPage} from "@/pages/NotFoundPage";
-import { MainPage } from "@/pages/MainPage";
+} from '@/shared/const/router'
+import { NotFoundPage } from '@/pages/NotFoundPage'
+import { MainPage } from '@/pages/MainPage'
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
 	[AppRoutes.MAIN]: {

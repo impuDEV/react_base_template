@@ -1,11 +1,12 @@
-import webpack from "webpack";
-import {BuildOptions} from "./types/config";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import CircularDependencyPlugin from "circular-dependency-plugin";
-import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
-import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import webpack from 'webpack'
+import { BuildOptions } from './types/config'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import CircularDependencyPlugin from 'circular-dependency-plugin'
+import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin'
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const packageInstance = require('../../package.json')
 
 export function buildPlugins(
@@ -45,8 +46,8 @@ export function buildPlugins(
 	if(isProd) {
 		plugins.push(
 			new MiniCssExtractPlugin({
-				filename: "css/[name].[contenthash:8].css",
-				chunkFilename: "css/[name].[contenthash:8].css",
+				filename: 'css/[name].[contenthash:8].css',
+				chunkFilename: 'css/[name].[contenthash:8].css',
 			})
 		)
 

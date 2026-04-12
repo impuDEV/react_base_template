@@ -1,8 +1,9 @@
 import './styles/index.scss'
-import {classNames} from "@/shared/lib/classNames/classNames";
-import {Suspense} from "react";
-import {AppRouter} from "@/app/providers/router";
-import {useTheme} from "@/shared/lib/hooks/useTheme/useTheme";
+import { classNames } from '@/shared/lib/classNames/classNames'
+import { Suspense } from 'react'
+import { AppRouter } from '@/app/providers/router'
+import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme'
+
 
 const App = () => {
 	const { theme } = useTheme()
