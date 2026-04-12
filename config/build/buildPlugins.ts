@@ -5,7 +5,6 @@ import CircularDependencyPlugin from "circular-dependency-plugin";
 import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import CopyPlugin from "copy-webpack-plugin";
 
 const packageInstance = require('../../package.json')
 
@@ -35,7 +34,6 @@ export function buildPlugins(
 
 	if (isDev) {
 		plugins.push(new ReactRefreshPlugin())
-		plugins.push(new webpack.HotModuleReplacementPlugin())
 		plugins.push(
 			new BundleAnalyzerPlugin({
 				openAnalyzer: false,
