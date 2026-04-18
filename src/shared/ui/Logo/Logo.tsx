@@ -15,21 +15,18 @@ interface LogoProps {
 }
 
 export const Logo = memo((props: LogoProps) => {
-    const {
-		src,
-		width,
-		height,
-		alt,
-		fallbackInverted,
-	} = props
+	const { src, width, height, alt, fallbackInverted } = props
 
-	const styles = useMemo<CSSProperties>(() => ({
-		width,
-		height,
-	}), [width, height])
+	const styles = useMemo<CSSProperties>(
+		() => ({
+			width,
+			height,
+		}),
+		[width, height],
+	)
 
-	const fallback = <Loader/>
-	const errorFallback = <Icon Svg={noimage}/>
+	const fallback = <Loader />
+	const errorFallback = <Icon Svg={noimage} />
 
 	return (
 		<div className={classNames(cls.Logo, {}, [])}>
@@ -41,7 +38,5 @@ export const Logo = memo((props: LogoProps) => {
 				style={styles}
 			/>
 		</div>
-
 	)
 })
-

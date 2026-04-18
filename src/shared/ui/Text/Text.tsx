@@ -21,7 +21,7 @@ export enum TextSize {
 }
 
 interface TextProps {
-    className?: string
+	className?: string
 	title?: string
 	text?: string
 	variant?: TextVariant
@@ -39,7 +39,7 @@ const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
 	[TextSize.L]: 'h1',
 }
 export const Text = memo((props: TextProps) => {
-    const {
+	const {
 		className,
 		title,
 		text,
@@ -62,21 +62,8 @@ export const Text = memo((props: TextProps) => {
 
 	return (
 		<div className={classNames(cls.Text, mods, [className])}>
-			{title && (
-				<HeaderTag
-					className={cls.title}
-				>
-					{title}
-				</HeaderTag>
-			)}
-			{text && (
-				<p
-					className={cls.text}
-				>
-					{text}
-				</p>
-			)}
+			{title && <HeaderTag className={cls.title}>{title}</HeaderTag>}
+			{text && <p className={cls.text}>{text}</p>}
 		</div>
 	)
 })
-

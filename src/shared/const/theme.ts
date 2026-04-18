@@ -1,3 +1,3 @@
 export enum Theme {
-	STANDARD = 'app_standard'
+	STANDARD = 'app_standard',
 }

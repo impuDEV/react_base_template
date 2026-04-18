@@ -4,7 +4,6 @@ import { Suspense } from 'react'
 import { AppRouter } from '@/app/providers/router'
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme'
 
-
 const App = () => {
 	const { theme } = useTheme()
 
@@ -12,7 +11,7 @@ const App = () => {
 		<div className={classNames('app', {}, [theme])}>
 			<Suspense fallback="">
 				<div className="content-page">
-					<AppRouter/>
+					<AppRouter />
 				</div>
 			</Suspense>
 		</div>
